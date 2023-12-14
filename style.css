@@ -49,14 +49,11 @@ body {
 }
 
 .button {
-    position: relative;
-  top: 50%;
-  /* transform: translateY(-50%); */
+  position: relative;
   background-color: #4640f4;
   color: #ffffff;
-  border-radius: 50%;
+  border-radius: 15%;
   padding: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease
 }
 
