@@ -333,6 +333,20 @@ function handleKeyPress(event) {
     }
 }
 
+//touch button
+function leftmove() {
+    moveTetromino("left");
+}
+function rightmove() {
+    moveTetromino("right");
+}
+function rotatemove() {
+    rotateTetromino();
+}
+function dropmove() {
+    dropTetromino();
+}
+
 document.body.addEventListener("click", () => {
     bgm.play();
     bgm.loop=true;
