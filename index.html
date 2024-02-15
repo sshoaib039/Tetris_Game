@@ -8,24 +8,27 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 <body>
-    <div class="game_board_wrap">
-        <img src="logo.png" alt="tetris" class="logo">
-        <div id="game_board"></div>
+    <div class="wrapper">
+        <div class="game_board_wrap">
+            <img src="logo.png" alt="tetris" class="logo">
+            <div id="game_board"></div>
+        </div>
+        <div id="buttons">
+            <button onclick="leftmove()" class="button">
+                <img src="left.png" class="btn-icon">
+            </button>
+            <button onclick="rightmove()" class="button">
+                <img src="right.png" class="btn-icon">
+            </button>
+            <button onclick="rotatemove()" class="button">
+                <img src="rotate.png" class="btn-icon">
+            </button>
+            <button onclick="dropmove()" class="button">
+                <img src="drop.png" class="btn-icon">
+            </button>
+        </div>
     </div>
-    <div id="buttons">
-        <button onclick="leftmove()" class="button">
-            left
-        </button>
-        <button onclick="rightmove()" class="button">
-            right
-        </button>
-        <button onclick="rotatemove()" class="button">
-            rotate
-        </button>
-        <button onclick="dropmove()" class="button">
-            drop
-        </button>
-    </div>
+    
 
     <script src="script.js"></script>
 </body>
